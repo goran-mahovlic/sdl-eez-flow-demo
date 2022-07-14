@@ -10,7 +10,7 @@ Get the source with:
 
 ```git clone --recurse-submodules https://github.com/eez-open/sdl-eez-flow-demo```
 
-First, build the project using EEZ Studio.
+First, build the project `sdl-eez-flow-demo.eez-project` using EEZ Studio.
 
 #### Linux
 
