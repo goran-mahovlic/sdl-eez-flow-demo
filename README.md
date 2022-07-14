@@ -13,7 +13,7 @@ First, build the project using EEZ Studio.
 ```
 sudo apt-get update
 sudo apt-get install -y git libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev cmake build-essential libbsd-dev
-cd C:\work\eez\sdl-eez-flow-demo
+cd /path/to/sdl-eez-flow-demo
 mkdir -p build/linux
 cd build/linux
 cmake ../..
@@ -44,10 +44,10 @@ set SDL2IMAGEDIR=..\SDL2_image-2.0.4
 Execute `cmake.bat`:
 
 ```
-cd C:\work\eez\sdl-eez-flow-demo
+cd /path/to/sdl-eez-flow-demo
 .\cmake.bat
 ```
 
-Visual Studio solution is created in `C:\work\eez\sdl-eez-flow-demo\build\win32`.
+Visual Studio solution is created in `/path/to/sdl-eez-flow-demo\build\win32`.
 
 Use Visual Studio to build the solution.
