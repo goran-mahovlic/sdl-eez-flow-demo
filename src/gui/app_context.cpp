@@ -26,8 +26,6 @@ namespace eez {
         } g_myAppContext;
 
         AppContext *getAppContextFromId(int16_t id) { return &g_myAppContext; }
-        void executeNumericKeypadOptionHook(int optionActionIndex) { }
-        void action_edit() { }
     } // namespace gui
 } // namespace eez
 
