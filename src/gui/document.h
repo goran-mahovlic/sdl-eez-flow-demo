@@ -191,7 +191,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 7
 };
 
-extern const uint8_t assets[64027];
+extern const uint8_t assets[64029];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -378,7 +378,7 @@ enum PagesEnum {
     PAGE_ID_LOADER = 7
 };
 
-extern const uint8_t assets[64027];
+extern const uint8_t assets[64029];
 
 #endif
 
