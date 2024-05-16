@@ -499,6 +499,46 @@
           "height": 24,
           "customInputs": [],
           "customOutputs": []
+        },
+        {
+          "objID": "85d33a5e-4395-42db-f3fd-1320724a69d9",
+          "type": "QRCodeWidget",
+          "left": 84,
+          "top": 151,
+          "width": 205,
+          "height": 199,
+          "customInputs": [],
+          "customOutputs": [],
+          "data": "\"DORS/CLUC 2024\"",
+          "style": {
+            "objID": "4f037bec-a1ad-43b7-ff67-f3048de7c92a",
+            "useStyle": "default",
+            "conditionalStyles": [],
+            "childStyles": []
+          },
+          "timeline": [],
+          "eventHandlers": [],
+          "errorCorrection": "medium"
+        },
+        {
+          "objID": "8708b0e1-d8d2-4a9d-b3ad-58286db4ea38",
+          "type": "QRCodeWidget",
+          "left": 705,
+          "top": 145,
+          "width": 205,
+          "height": 199,
+          "customInputs": [],
+          "customOutputs": [],
+          "data": "\"Intergalaktik\"",
+          "style": {
+            "objID": "f32305d4-462c-4a3a-c0d2-a62697832958",
+            "useStyle": "default",
+            "conditionalStyles": [],
+            "childStyles": []
+          },
+          "timeline": [],
+          "eventHandlers": [],
+          "errorCorrection": "medium"
         }
       ],
       "connectionLines": [
