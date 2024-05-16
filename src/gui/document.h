@@ -227,15 +227,11 @@ enum PagesEnum {
 ,
     PAGE_ID_GRAPH = 10,
     PAGE_ID_ANIM_DEMO = 11,
-    PAGE_ID_INPUT_DEMO = 12,
-    PAGE_ID_NUMERIC_KEYPAD = 13,
-    PAGE_ID_KEYBOARD = 14,
-    PAGE_ID_ROLLER_INPUT_DEMO = 15,
-    PAGE_ID_GAUGE = 16,
-    PAGE_ID_LOADER = 17
+    PAGE_ID_GAUGE = 12,
+    PAGE_ID_LOADER = 13
 };
 
-extern const uint8_t assets[81206];
+extern const uint8_t assets[70276];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -458,15 +454,11 @@ enum PagesEnum {
 ,
     PAGE_ID_GRAPH = 10,
     PAGE_ID_ANIM_DEMO = 11,
-    PAGE_ID_INPUT_DEMO = 12,
-    PAGE_ID_NUMERIC_KEYPAD = 13,
-    PAGE_ID_KEYBOARD = 14,
-    PAGE_ID_ROLLER_INPUT_DEMO = 15,
-    PAGE_ID_GAUGE = 16,
-    PAGE_ID_LOADER = 17
+    PAGE_ID_GAUGE = 12,
+    PAGE_ID_LOADER = 13
 };
 
-extern const uint8_t assets[81206];
+extern const uint8_t assets[70276];
 
 #endif
 
