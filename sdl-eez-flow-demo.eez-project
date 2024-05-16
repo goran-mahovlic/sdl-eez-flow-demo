@@ -2927,6 +2927,7 @@
         }
       ],
       "localVariables": [],
+      "id": 2,
       "name": "anim_demo",
       "style": "background",
       "left": 0,
@@ -3154,6 +3155,7 @@
         }
       ],
       "localVariables": [],
+      "id": 3,
       "name": "gauge",
       "left": 0,
       "top": 0,
@@ -3706,7 +3708,7 @@
           "persistent": false
         }
       ],
-      "id": 10,
+      "id": 4,
       "name": "graph",
       "style": "background",
       "left": 0,
