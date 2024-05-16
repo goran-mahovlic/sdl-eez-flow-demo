@@ -451,8 +451,8 @@
         {
           "objID": "a9c55d8b-73ed-bd49-d870-12f6504ac2d2",
           "type": "ButtonWidget",
-          "left": 171,
-          "top": 341,
+          "left": 372,
+          "top": 350,
           "width": 230,
           "height": 80,
           "customInputs": [],
@@ -499,48 +499,6 @@
           "height": 24,
           "customInputs": [],
           "customOutputs": []
-        },
-        {
-          "objID": "8e7d4fbb-967a-1d2b-4944-ab69843eacfa",
-          "type": "ButtonWidget",
-          "left": 560,
-          "top": 341,
-          "width": 230,
-          "height": 80,
-          "customInputs": [],
-          "customOutputs": [],
-          "data": "\"INPUT DEMO\"",
-          "style": {
-            "objID": "35d5880b-01be-244b-043f-96c682dfea99",
-            "useStyle": "button",
-            "conditionalStyles": [],
-            "childStyles": []
-          },
-          "timeline": [],
-          "eventHandlers": [
-            {
-              "objID": "cd0d809a-e621-af49-4d1c-1dcb9f3f016c",
-              "eventName": "CLICKED",
-              "handlerType": "flow"
-            }
-          ],
-          "disabledStyle": {
-            "objID": "943973f0-c29b-84c9-6d8f-88611338205c",
-            "useStyle": "button_disabled",
-            "conditionalStyles": [],
-            "childStyles": []
-          }
-        },
-        {
-          "objID": "52d2d58f-8e5f-fb40-59fb-cc4f4be13b0e",
-          "type": "ShowPageActionComponent",
-          "left": 575,
-          "top": 524,
-          "width": 94,
-          "height": 54,
-          "customInputs": [],
-          "customOutputs": [],
-          "page": "input_demo"
         }
       ],
       "connectionLines": [
@@ -556,13 +514,6 @@
           "source": "cc3037e7-8f0f-70c8-a53b-38328fa3137b",
           "output": "@seqout",
           "target": "f90b60d0-0665-1f2d-d7bb-8672ca4b6e2e",
-          "input": "@seqin"
-        },
-        {
-          "objID": "d1c02421-6008-116c-0cdb-7241ab4ba1db",
-          "source": "8e7d4fbb-967a-1d2b-4944-ab69843eacfa",
-          "output": "CLICKED",
-          "target": "52d2d58f-8e5f-fb40-59fb-cc4f4be13b0e",
           "input": "@seqin"
         }
       ],
@@ -2594,56 +2545,7 @@
           },
           "timeline": [],
           "eventHandlers": [],
-          "widgets": [
-            {
-              "objID": "c0036f07-f1f4-5394-6c0a-0720392b27ff",
-              "type": "TextWidget",
-              "left": 0,
-              "top": 10,
-              "width": 136,
-              "height": 40,
-              "customInputs": [],
-              "customOutputs": [],
-              "data": "\"Text:\"",
-              "style": {
-                "objID": "4e2cfb54-7dff-9d2a-6e3f-8b31be75b9d4",
-                "useStyle": "default",
-                "conditionalStyles": [],
-                "childStyles": [],
-                "alignHorizontal": "left"
-              },
-              "timeline": [],
-              "eventHandlers": [],
-              "focusStyle": {
-                "objID": "318b46e1-1926-2f24-0a97-5dbe2ca25d1e",
-                "useStyle": "default",
-                "conditionalStyles": [],
-                "childStyles": []
-              }
-            },
-            {
-              "objID": "8b54c756-2c9a-ea32-03f6-c7508f21fdd1",
-              "type": "InputEmbeddedWidget",
-              "left": 160,
-              "top": 0,
-              "width": 620,
-              "height": 60,
-              "customInputs": [],
-              "customOutputs": [],
-              "data": "text_value",
-              "style": {
-                "objID": "9b6eb2f1-a256-df1c-25bb-3daaf481a632",
-                "useStyle": "text_input",
-                "conditionalStyles": [],
-                "childStyles": []
-              },
-              "timeline": [],
-              "eventHandlers": [],
-              "inputType": "text",
-              "min": "0",
-              "max": "100"
-            }
-          ],
+          "widgets": [],
           "layout": "static"
         },
         {
