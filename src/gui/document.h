@@ -23,7 +23,21 @@ enum DataEnum {
     DATA_ID_KEYPAD_OPTION3_ENABLED = 11,
     DATA_ID_KEYPAD_OPTION3_TEXT = 12,
     DATA_ID_KEYPAD_MODE = 13,
-    DATA_ID_KEYPAD_OK_ENABLED = 14
+    DATA_ID_KEYPAD_OK_ENABLED = 14,
+    DATA_ID_ALERT_MESSAGE_1 = 15,
+    DATA_ID_KEYPAD_TEXT_1 = 16,
+    DATA_ID_KEYPAD_EDIT_UNIT_1 = 17,
+    DATA_ID_KEYPAD_SIGN_ENABLED_1 = 18,
+    DATA_ID_KEYPAD_UNIT_ENABLED_1 = 19,
+    DATA_ID_KEYPAD_DOT_ENABLED_1 = 20,
+    DATA_ID_KEYPAD_OPTION1_ENABLED_1 = 21,
+    DATA_ID_KEYPAD_OPTION1_TEXT_1 = 22,
+    DATA_ID_KEYPAD_OPTION2_ENABLED_1 = 23,
+    DATA_ID_KEYPAD_OPTION2_TEXT_1 = 24,
+    DATA_ID_KEYPAD_OPTION3_ENABLED_1 = 25,
+    DATA_ID_KEYPAD_OPTION3_TEXT_1 = 26,
+    DATA_ID_KEYPAD_MODE_1 = 27,
+    DATA_ID_KEYPAD_OK_ENABLED_1 = 28
 };
 
 void data_none(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
@@ -41,6 +55,20 @@ void data_keypad_option3_enabled(DataOperationEnum operation, const WidgetCursor
 void data_keypad_option3_text(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_mode(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_ok_enabled(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_alert_message_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_edit_unit_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_sign_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_unit_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_dot_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option1_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option1_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option2_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option2_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option3_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option3_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_mode_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_ok_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 
 typedef void (*DataOperationsFunction)(DataOperationEnum operation, const WidgetCursor &widgetCursor, Value &value);
 
@@ -91,10 +119,12 @@ enum FontsEnum {
     FONT_ID_NONE = 0,
     FONT_ID_TEXT_M = 1,
     FONT_ID_SHADOW = 2,
-    FONT_ID_ICONS = 3,
-    FONT_ID_TEXT_L = 4,
-    FONT_ID_TEXT_XXL = 5,
-    FONT_ID_TEXT_XL = 6
+    FONT_ID_MEDIUM = 3,
+    FONT_ID_ICONS = 4,
+    FONT_ID_TEXT_L = 5,
+    FONT_ID_TEXT_XXL = 6,
+    FONT_ID_TEXT_XL = 7,
+    FONT_ID_SMALL = 8
 };
 
 enum BitmapsEnum {
@@ -175,23 +205,37 @@ enum ColorsEnum {
 	COLOR_ID_CUSTOM_3510E6 = 37,
 	COLOR_ID_CUSTOM_14D224 = 38,
 	COLOR_ID_CUSTOM_EC2A15 = 39,
-	COLOR_ID_CUSTOM_B9F3F0 = 40,
-	COLOR_ID_CUSTOM_EEE30F = 41,
-	COLOR_ID_CUSTOM_C8C8C8 = 42
+	COLOR_ID_CUSTOM_202020 = 40,
+	COLOR_ID_CUSTOM_B9F3F0 = 41,
+	COLOR_ID_CUSTOM_EEE30F = 42,
+	COLOR_ID_CUSTOM_C8C8C8 = 43,
+	COLOR_ID_CUSTOM_9E0000 = 44,
+	COLOR_ID_CUSTOM_0000A3 = 45,
+	COLOR_ID_CUSTOM_00A800 = 46
 };
 
 enum PagesEnum {
     PAGE_ID_NONE = 0,
     PAGE_ID_MAIN = 1,
-    PAGE_ID_ANIM_DEMO = 2,
-    PAGE_ID_INPUT_DEMO = 3,
-    PAGE_ID_NUMERIC_KEYPAD = 4,
-    PAGE_ID_KEYBOARD = 5,
-    PAGE_ID_ROLLER_INPUT_DEMO = 6,
-    PAGE_ID_LOADER = 7
+,
+,
+,
+,
+,
+,
+,
+,
+    PAGE_ID_GRAPH = 10,
+    PAGE_ID_ANIM_DEMO = 11,
+    PAGE_ID_INPUT_DEMO = 12,
+    PAGE_ID_NUMERIC_KEYPAD = 13,
+    PAGE_ID_KEYBOARD = 14,
+    PAGE_ID_ROLLER_INPUT_DEMO = 15,
+    PAGE_ID_GAUGE = 16,
+    PAGE_ID_LOADER = 17
 };
 
-extern const uint8_t assets[67454];
+extern const uint8_t assets[81206];
 
 #elif defined(EEZ_PLATFORM_SIMULATOR)
 
@@ -210,7 +254,21 @@ enum DataEnum {
     DATA_ID_KEYPAD_OPTION3_ENABLED = 11,
     DATA_ID_KEYPAD_OPTION3_TEXT = 12,
     DATA_ID_KEYPAD_MODE = 13,
-    DATA_ID_KEYPAD_OK_ENABLED = 14
+    DATA_ID_KEYPAD_OK_ENABLED = 14,
+    DATA_ID_ALERT_MESSAGE_1 = 15,
+    DATA_ID_KEYPAD_TEXT_1 = 16,
+    DATA_ID_KEYPAD_EDIT_UNIT_1 = 17,
+    DATA_ID_KEYPAD_SIGN_ENABLED_1 = 18,
+    DATA_ID_KEYPAD_UNIT_ENABLED_1 = 19,
+    DATA_ID_KEYPAD_DOT_ENABLED_1 = 20,
+    DATA_ID_KEYPAD_OPTION1_ENABLED_1 = 21,
+    DATA_ID_KEYPAD_OPTION1_TEXT_1 = 22,
+    DATA_ID_KEYPAD_OPTION2_ENABLED_1 = 23,
+    DATA_ID_KEYPAD_OPTION2_TEXT_1 = 24,
+    DATA_ID_KEYPAD_OPTION3_ENABLED_1 = 25,
+    DATA_ID_KEYPAD_OPTION3_TEXT_1 = 26,
+    DATA_ID_KEYPAD_MODE_1 = 27,
+    DATA_ID_KEYPAD_OK_ENABLED_1 = 28
 };
 
 void data_none(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
@@ -228,6 +286,20 @@ void data_keypad_option3_enabled(DataOperationEnum operation, const WidgetCursor
 void data_keypad_option3_text(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_mode(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 void data_keypad_ok_enabled(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_alert_message_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_edit_unit_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_sign_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_unit_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_dot_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option1_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option1_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option2_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option2_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option3_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_option3_text_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_mode_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
+void data_keypad_ok_enabled_1(DataOperationEnum operation, const WidgetCursor &cursor, Value &value);
 
 typedef void (*DataOperationsFunction)(DataOperationEnum operation, const WidgetCursor &widgetCursor, Value &value);
 
@@ -278,10 +350,12 @@ enum FontsEnum {
     FONT_ID_NONE = 0,
     FONT_ID_TEXT_M = 1,
     FONT_ID_SHADOW = 2,
-    FONT_ID_ICONS = 3,
-    FONT_ID_TEXT_L = 4,
-    FONT_ID_TEXT_XXL = 5,
-    FONT_ID_TEXT_XL = 6
+    FONT_ID_MEDIUM = 3,
+    FONT_ID_ICONS = 4,
+    FONT_ID_TEXT_L = 5,
+    FONT_ID_TEXT_XXL = 6,
+    FONT_ID_TEXT_XL = 7,
+    FONT_ID_SMALL = 8
 };
 
 enum BitmapsEnum {
@@ -362,23 +436,37 @@ enum ColorsEnum {
 	COLOR_ID_CUSTOM_3510E6 = 37,
 	COLOR_ID_CUSTOM_14D224 = 38,
 	COLOR_ID_CUSTOM_EC2A15 = 39,
-	COLOR_ID_CUSTOM_B9F3F0 = 40,
-	COLOR_ID_CUSTOM_EEE30F = 41,
-	COLOR_ID_CUSTOM_C8C8C8 = 42
+	COLOR_ID_CUSTOM_202020 = 40,
+	COLOR_ID_CUSTOM_B9F3F0 = 41,
+	COLOR_ID_CUSTOM_EEE30F = 42,
+	COLOR_ID_CUSTOM_C8C8C8 = 43,
+	COLOR_ID_CUSTOM_9E0000 = 44,
+	COLOR_ID_CUSTOM_0000A3 = 45,
+	COLOR_ID_CUSTOM_00A800 = 46
 };
 
 enum PagesEnum {
     PAGE_ID_NONE = 0,
     PAGE_ID_MAIN = 1,
-    PAGE_ID_ANIM_DEMO = 2,
-    PAGE_ID_INPUT_DEMO = 3,
-    PAGE_ID_NUMERIC_KEYPAD = 4,
-    PAGE_ID_KEYBOARD = 5,
-    PAGE_ID_ROLLER_INPUT_DEMO = 6,
-    PAGE_ID_LOADER = 7
+,
+,
+,
+,
+,
+,
+,
+,
+    PAGE_ID_GRAPH = 10,
+    PAGE_ID_ANIM_DEMO = 11,
+    PAGE_ID_INPUT_DEMO = 12,
+    PAGE_ID_NUMERIC_KEYPAD = 13,
+    PAGE_ID_KEYBOARD = 14,
+    PAGE_ID_ROLLER_INPUT_DEMO = 15,
+    PAGE_ID_GAUGE = 16,
+    PAGE_ID_LOADER = 17
 };
 
-extern const uint8_t assets[67454];
+extern const uint8_t assets[81206];
 
 #endif
 
